@@ -161,7 +161,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
             <div className="row overflow-hidden rounded-2xl">
               <div className="col-12">
                 <div className="row relative justify-center pb-10">
-                  <div className="banner-content col-10 pt-20 pb-10 text-center">
+                  {/*                   <div className="banner-content col-10 pt-20 pb-10 text-center">
                     {markdownify(
                       banner.title,
                       "h1",
@@ -172,15 +172,91 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                         {banner.link.label}
                       </Link>
                     </div>
-                  </div>
-                  <div className="col-10">
+                  </div> */}
+                  <div className="flex relative">
                     <ImageFallback
-                      className="banner-img opacity-0"
-                      src={banner.image}
-                      width={1170}
-                      height={666}
+                      className="banner-img left-[32%] opacity-0 relative h-40 top-20 z-20"
+                      src={banner.image2}
+                      width={300}
+                      height={10}
                       priority={true}
-                      alt=""
+                      alt="Fruta"
+                    />
+
+                    <ImageFallback
+                      className="banner-img opacity-0 flex -left-40 relative top-8 z-10"
+                      src={banner.image3}
+                      width={300}
+                      height={60}
+                      priority={true}
+                      alt="Eng-Frutas"
+                    />
+
+                    <ImageFallback
+                      className="banner-img opacity-0 h-80 top-20  left-96 flex  relative z-10"
+                      src={banner.image}
+                      width={600}
+                      height={100}
+                      priority={true}
+                      alt="Eng-Planilha"
+                    />
+
+                    <ImageFallback
+                      className="banner-img  opacity-0 flex relative h-40 animate-spin"
+                      src={banner.image2}
+                      width={200}
+                      height={10}
+                      priority={true}
+                      alt="Fruta"
+                    />
+
+                    <ImageFallback
+                      className="banner-img  opacity-0 flex relative  h-32 top-72 animate-retro"
+                      src={banner.image2}
+                      width={200}
+                      height={10}
+                      priority={true}
+                      alt="Fruta"
+                    />
+
+                    <ImageFallback
+                      className="banner-img  opacity-0 relative -left-1/4 h-20 top-72 "
+                      src={banner.image2}
+                      width={100}
+                      height={10}
+                      priority={true}
+                      alt="Fruta"
+                    />
+
+
+
+                    <ImageFallback
+                      className="banner-img  opacity-0 relative -left-2/4 h-20 top-72 animate-retro"
+                      src={banner.image2}
+                      width={100}
+                      height={10}
+                      priority={true}
+                      alt="Fruta"
+                    />
+
+
+
+                    <ImageFallback
+                      className="banner-img ml-10 right-[82%] h-80 opacity-0 flex relative animate-spin"
+                      src={banner.imageLogo}
+                      width={600}
+                      height={400}
+                      priority={true}
+                      alt="Q-Logo"
+                    />
+
+                    <ImageFallback
+                      className="banner-img right-full opacity-0 flex relative"
+                      src={banner.imageLogo2}
+                      width={600}
+                      height={50}
+                      priority={true}
+                      alt="Logo"
                     />
                   </div>
                 </div>

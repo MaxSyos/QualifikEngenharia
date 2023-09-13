@@ -65,10 +65,52 @@ module.exports = {
         h5: h5 + "rem",
         h6: h6 + "rem",
       },
+      inset: {
+        '1/10': '10%',
+        '1/20': '5%',
+        '1/40': '2.5%',
+        '1/60': '1.67%',
+        '1/80': '1.25%',
+        '1/100': '1%',
+        '80p':'80%',
+        '85p':'85%',
+        '90p':'90%',
+        '95p':'95%',
+        '3/2': '150%',
+        '4/2': '200%',
+        '5/2': '250%',
+        '-1/10': '-10%',
+        '-1/20': '-5%',
+        '-1/40': '-2.5%',
+        '-1/60': '-1.67%',
+        '-1/80': '-1.25%',
+        '-1/100': '-1%',
+        '-80p':'-80%',
+        '-85p':'-85%',
+        '-90p':'-90%',
+        '-95p':'-95%',
+        '-3/2': '-150%',
+        '-4/2': '-200%',
+        '-5/2': '-250%',
+      },
       fontFamily: {
         primary: [fontPrimary, fontPrimaryType],
         secondary: [fontSecondary, fontSecondaryType],
       },
+      animation: {
+        'spin': 'spin 15s linear infinite',
+        'retro': 'spin 7s linear infinite reverse',
+      },
+      keyframes: {
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        retro:{
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        }
+      }
     },
   },
   plugins: [

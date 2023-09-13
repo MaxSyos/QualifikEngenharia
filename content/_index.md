@@ -1,7 +1,12 @@
 ---
 banner:
   title: "Andromeda is the most intuitive </br> way to prototype Designs"
-  image: /images/banner-app.png
+  image: /images/Eng1.png
+  image2: /images/Qualifik-LOGO-Fruit-f.png
+  image3: /images/Eng3.png
+  image4: /images/Eng2.png
+  imageLogo: /images/Qualifik-LOGO-Sfruit-fotor.png
+  imageLogo2: /images/Qualifik-LOGO-SQ-Photo.png
   link:
     label: Get Premium Version
     href: "#"

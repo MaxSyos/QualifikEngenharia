@@ -2,10 +2,10 @@
   "site": {
     "title": "Andromeda Light Nextjs",
     "base_url": "/",
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo.svg",
-    "logo_width": "240",
-    "logo_height": "34",
+    "favicon": "/images/Qualifik-LOGO.png",
+    "logo": "/images/Qualifik-LOGO.png",
+    "logo_width": "180",
+    "logo_height": "90",
     "logo_text": "Andromeda"
   },
 
