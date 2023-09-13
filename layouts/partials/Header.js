@@ -65,11 +65,11 @@ const Header = () => {
                   <li className="nav-item nav-dropdown group relative">
                     <span className="nav-link inline-flex items-center">
                       {menu.name}
-                      <svg className="h-4 w-4 fill-current" viewBox="0 0 20 20">
+{/*                       <svg className="h-4 w-4 fill-current" viewBox="0 0 20 20">
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                      </svg>
+                      </svg> */}
                     </span>
-                    <ul className="nav-dropdown-list hidden max-h-0 w-full overflow-hidden border border-border-secondary py-0 transition-all duration-500 group-hover:block group-hover:max-h-[106px] group-hover:py-2 lg:invisible lg:absolute lg:left-1/2 lg:block lg:w-auto lg:-translate-x-1/2 lg:group-hover:visible lg:group-hover:opacity-100">
+    {/*                 <ul className="nav-dropdown-list hidden max-h-0 w-full overflow-hidden border border-border-secondary py-0 transition-all duration-500 group-hover:block group-hover:max-h-[106px] group-hover:py-2 lg:invisible lg:absolute lg:left-1/2 lg:block lg:w-auto lg:-translate-x-1/2 lg:group-hover:visible lg:group-hover:opacity-100">
                       {menu.children.map((child, i) => (
                         <li className="nav-dropdown-item" key={`children-${i}`}>
                           <Link
@@ -82,7 +82,7 @@ const Header = () => {
                           </Link>
                         </li>
                       ))}
-                    </ul>
+                    </ul> */}
                   </li>
                 ) : (
                   <li className="nav-item">
@@ -98,7 +98,7 @@ const Header = () => {
                 )}
               </React.Fragment>
             ))}
-            {config.nav_button.enable && (
+{/*             {config.nav_button.enable && (
               <li className="nav-item lg:hidden">
                 <Link
                   className="btn btn-primary hidden lg:flex"
@@ -107,17 +107,17 @@ const Header = () => {
                   {config.nav_button.label}
                 </Link>
               </li>
-            )}
+            )} */}
           </ul>
           <div className="order-1 ml-auto flex items-center md:ml-0">
-            {config.nav_button.enable && (
+{/*             {config.nav_button.enable && (
               <Link
                 className="btn btn-primary hidden lg:flex"
                 href={config.nav_button.link}
               >
                 {config.nav_button.label}
               </Link>
-            )}
+            )} */}
 
             {/* navbar toggler */}
             {showMenu ? (

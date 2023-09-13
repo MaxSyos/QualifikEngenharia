@@ -5,45 +5,32 @@
       "url": "/"
     },
     {
-      "name": "About",
-      "url": "/about"
+      "name": "Quem Somos",
+      "url": "/"
     },
     {
-      "name": "Blog",
-      "url": "/posts"
+      "name": "Serviços",
+      "url": "/"
     },
     {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
-        {
-          "name": "Terms & Conditions",
-          "url": "/terms-policy"
-        }
-      ]
-    },
-    {
-      "name": "Contact",
+      "name": "Contato",
       "url": "/contact"
     }
   ],
   "footer": [
     {
-      "name": "About",
-      "url": "/about"
+      "name": "Quem Somos",
+      "url": "/"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
+      "name": "Serviços",
+      "url": "/"
     },
     {
-      "name": "Terms & Conditions",
-      "url": "/terms-policy"
+      "name": "Contato",
+      "url": "/"
     }
   ]
 }
+
+

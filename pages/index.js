@@ -230,7 +230,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
 
                     <ImageFallback
                       className="banner-img left-12 w-48 h-48 top-20 sm:left-[4%] sm:w-40 sm:h-40 md:w-48 
-                      md:h-48 md:left-[26%] lg:left-[32%] opacity-0 flex absolute animate-spin"
+                      md:h-48 md:left-[26%] lg:left-[33%] lg:top-[27%] opacity-0 flex absolute animate-spin"
                       src={banner.imageLogo}
                       width={300}
                       height={400}
@@ -305,7 +305,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                 clickable: true,
                 dynamicBullets: true,
               }}
-              // autoplay={{ delay: 3000 }}
+              autoplay={{ delay: 3000 }}
               onBeforeInit={(swiper) => {
                 swiper.params.pagination.el = paginationRef.current;
               }}
@@ -321,7 +321,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
             >
               {features.list.map((item, index) => (
                 <SwiperSlide key={"feature-" + index}>
-                  <div className="feature-card m-4 rounded-md border border-transparent py-16 px-7 shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
+                  <div className="feature-card m-4 hover:scale-105 rounded-md border border-transparent py-16 px-7 shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
                     <div className="feature-card-icon inline-flex h-20 w-20 items-center justify-center rounded-md border border-[#fff7f3] text-primary">
                       <FeatherIcon icon={item.icon} />
                     </div>
@@ -415,7 +415,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
           <div className="row items-center justify-center">
             <div className="animate lg:col-6 lg:order-2">
               <ImageFallback
-                className="mx-auto"
+                className="mx-auto rounded-xl"
                 src={speciality.primary.image}
                 width={575}
                 height={511}
@@ -435,7 +435,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
           <div className="row items-center">
             <div className="animate lg:col-6">
               <ImageFallback
-                className="mx-auto"
+                className="mx-auto rounded-xl"
                 src={speciality.secondary.image}
                 width={575}
                 height={511}
@@ -467,12 +467,12 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
             <div className="xl:col-11">
               <div className="row items-center justify-center">
                 <div className="hidden lg:col-3 xl:col-4 lg:block">
-                  <ImageFallback
+{/*                   <ImageFallback
                     src="/images/testimonials-01.png"
                     width={455}
                     height={522}
                     alt="testimonials"
-                  />
+                  /> */}
                 </div>
                 <div className="md:col-7 lg:col-6 xl:col-4">
                   {
@@ -496,14 +496,16 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                           className="text-center"
                           key={"testimonial-" + index}
                         >
-                          <div className="py-6 px-8 sm:py-12 md:px-10 lg:px-20 xl:px-12">
-                            <TbQuote className="mx-auto rotate-180 text-5xl text-body sm:text-6xl lg:text-8xl" />
+                          <div className="py-6 px-8 sm:py-8 md:px-10 lg:px-20 xl:px-12">
+                            <div className="mx-auto text-5xl text-body sm:text-6xl lg:text-8xl" >
+                            {markdownify( item.profession, "h1")}
+                            </div>
                             {markdownify(
                               item.content,
                               "p",
-                              "text-[17px] lg:text-lg text-body mt-4 md:mt-5 xl:mt-8"
+                              "text-[16px] lg:text-[16px] text-body mt-4 md:mt-5 xl:mt-8"
                             )}
-                            <div className="mt-7 inline-block rounded-md bg-body p-7 shadow-[0_10px_50px_rgba(0,0,0,.08)] md:mt-5 lg:mt-8 xl:mt-5">
+    {/*                         <div className="mt-7 inline-block rounded-md bg-body p-7 shadow-[0_10px_50px_rgba(0,0,0,.08)] md:mt-5 lg:mt-8 xl:mt-5">
                               <ImageFallback
                                 className="mx-auto rounded-full"
                                 src={item.avatar}
@@ -514,7 +516,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                               />
                               <h6>{item.author}</h6>
                               <p>{item.profession}</p>
-                            </div>
+                            </div> */}
                           </div>
                         </SwiperSlide>
                       ))}
@@ -528,12 +530,12 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                   </div>
                 </div>
                 <div className="hidden lg:col-3 xl:col-4 lg:block">
-                  <ImageFallback
+     {/*              <ImageFallback
                     src="/images/testimonials-02.png"
                     width={455}
                     height={522}
                     alt="testimonials"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>

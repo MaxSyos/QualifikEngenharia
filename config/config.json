@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Andromeda Light Nextjs",
+    "title": "Qualifik Engenharia",
     "base_url": "/",
     "favicon": "/images/Qualifik-LOGO.png",
     "logo": "/images/Qualifik-LOGO.png",
@@ -42,10 +42,10 @@
 
   "call_to_action": {
     "enable": true,
-    "title": "Get Andromeda Now",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.",
+    "title": "Precisa dos nosso Serviços?",
+    "content": "Preencha o nosso formulário que </br>em breve responderemos.",
     "button": {
-      "label": "Download The Theme",
+      "label": "Contato",
       "link": "https://themefisher.com/products/andromeda-light-nextjs"
     }
   },
