@@ -25,9 +25,16 @@ brands:
 
 #features
 features:
-  sub_title: SPECIAL FEATURES
-  title: Elements To </br> Get You Started
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  sub_title: 
+  title: Quem Somos
+  description: A Qualifik foi fundada em 2016, observando a necessidade em agregar valor
+        aos produtos alimentícios de empreendimentos da agricultura familiar, apoiando
+        tecnicamente cooperativas e associações. Com o tempo, serviços foram expandidos 
+        ao setor privado, atuando em produção de bebidas, doces, lácteos, conservas de frutas
+        e extração de óleos com frutos do Cerrado.
+        Além disso, a Qualifik também realizou projetos socioprodutivos e agroindustriais
+        na América Central e oferece formação profissionalizante nas áreas de tecnologia de
+        alimentos, precificação e empreendedorismo.
   list:
     - icon: 'lock' # feather icon: https://feathericons.com/
       title: Updated Security

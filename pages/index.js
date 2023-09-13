@@ -161,21 +161,12 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
             <div className="row overflow-hidden rounded-2xl">
               <div className="col-12">
                 <div className="row relative justify-center pb-10">
-                  {/*                   <div className="banner-content col-10 pt-20 pb-10 text-center">
-                    {markdownify(
-                      banner.title,
-                      "h1",
-                      "mb-8 banner-title opacity-0"
-                    )}
-                    <div className="banner-btn opacity-0">
-                      <Link className="btn btn-primary" href={banner.link.href}>
-                        {banner.link.label}
-                      </Link>
-                    </div>
-                  </div> */}
+      
                   <div className="flex relative">
                     <ImageFallback
-                      className="banner-img left-[32%] opacity-0 relative h-40 top-20 z-20"
+                      className="banner-img left-20 w-24 h-24 top-32 sm:left-[10%] 
+                      sm:w-20 sm:h-20 sm:top-[37%] md:left-[30%] md:w-28 md:h-28 lg:left-[35%]  
+                      opacity-0 relative  z-20"
                       src={banner.image2}
                       width={300}
                       height={10}
@@ -184,7 +175,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                     />
 
                     <ImageFallback
-                      className="banner-img opacity-0 flex -left-40 relative top-8 z-10"
+                      className="banner-img hidden md:flex opacity-0 -left-40 relative top-8 z-10"
                       src={banner.image3}
                       width={300}
                       height={60}
@@ -193,7 +184,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                     />
 
                     <ImageFallback
-                      className="banner-img opacity-0 h-80 top-20  left-96 flex  relative z-10"
+                      className="banner-img flex opacity-0 sm:right-12 md:left-[70%] lg:left-[35%] h-80 top-20 relative z-10"
                       src={banner.image}
                       width={600}
                       height={100}
@@ -202,7 +193,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                     />
 
                     <ImageFallback
-                      className="banner-img  opacity-0 flex relative h-40 animate-spin"
+                      className="banner-img hidden opacity-0 md:flex relative h-40 animate-spin"
                       src={banner.image2}
                       width={200}
                       height={10}
@@ -211,7 +202,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                     />
 
                     <ImageFallback
-                      className="banner-img  opacity-0 flex relative  h-32 top-72 animate-retro"
+                      className="banner-img hidden md:flex opacity-0  relative  h-32 top-72 animate-retro"
                       src={banner.image2}
                       width={200}
                       height={10}
@@ -220,7 +211,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                     />
 
                     <ImageFallback
-                      className="banner-img  opacity-0 relative -left-1/4 h-20 top-72 "
+                      className="banner-img hidden md:flex opacity-0 relative -left-1/4 h-20 top-72 "
                       src={banner.image2}
                       width={100}
                       height={10}
@@ -228,10 +219,8 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                       alt="Fruta"
                     />
 
-
-
                     <ImageFallback
-                      className="banner-img  opacity-0 relative -left-2/4 h-20 top-72 animate-retro"
+                      className="banner-img top-8 md:top-72 md:flex opacity-0 relative -left-2/4 h-20  animate-retro"
                       src={banner.image2}
                       width={100}
                       height={10}
@@ -239,22 +228,21 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                       alt="Fruta"
                     />
 
-
-
                     <ImageFallback
-                      className="banner-img ml-10 right-[82%] h-80 opacity-0 flex relative animate-spin"
+                      className="banner-img left-12 w-48 h-48 top-20 sm:left-[4%] sm:w-40 sm:h-40 md:w-48 
+                      md:h-48 md:left-[26%] lg:left-[32%] opacity-0 flex absolute animate-spin"
                       src={banner.imageLogo}
-                      width={600}
+                      width={300}
                       height={400}
                       priority={true}
                       alt="Q-Logo"
                     />
 
                     <ImageFallback
-                      className="banner-img right-full opacity-0 flex relative"
+                      className="banner-img hidden sm:right-[180%] sm:w-72 sm:h-40 sm:top-[31%] md:flex md:right-[26%] md:w-[400px] md:absolute lg:w-[500px] lg:h-[200px] md:left-[33%] opacity-0  relative"
                       src={banner.imageLogo2}
                       width={600}
-                      height={50}
+                      height={100}
                       priority={true}
                       alt="Logo"
                     />
@@ -281,7 +269,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                       className=" h-20 cursor-pointer py-6 px-6 grayscale  transition hover:grayscale-0 lg:px-10"
                       key={"brand-" + index}
                     >
-                      <div className="relative h-full">
+                      <div className="relative h-full ">
                         <ImageFallback
                           className="object-contain"
                           src={brand}
@@ -306,7 +294,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
           <div className="animate">
             <p className="uppercase">{features.sub_title}</p>
             {markdownify(features.title, "h2", "mt-4 section-title")}
-            {markdownify(features.description, "p", "mt-10")}
+            {markdownify(features.description, "p", "mt-10 px-48")}
           </div>
           <div className="animate from-right relative mt-10">
             <Swiper
