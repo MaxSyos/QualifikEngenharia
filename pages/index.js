@@ -165,7 +165,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                   <div className="flex relative">
                     <ImageFallback
                       className="banner-img left-20 w-24 h-24 top-32 sm:left-[10%] 
-                      sm:w-20 sm:h-20 sm:top-[37%] md:left-[30%] md:w-28 md:h-28 lg:left-[35%]  
+                      sm:w-20 sm:h-20 sm:top-[37%] md:left-[30%] md:w-28 md:h-28 lg:left-[36%] lg:top-[39%] 
                       opacity-0 relative  z-20"
                       src={banner.image2}
                       width={300}
@@ -202,7 +202,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                     />
 
                     <ImageFallback
-                      className="banner-img hidden md:flex opacity-0  relative  h-32 top-72 animate-retro"
+                      className="banner-img hidden md:flex opacity-0  relative  h-32 top-72 lg:right-[65%] animate-retro"
                       src={banner.image2}
                       width={200}
                       height={10}
@@ -220,7 +220,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                     />
 
                     <ImageFallback
-                      className="banner-img top-8 md:top-72 md:flex opacity-0 relative -left-2/4 h-20  animate-retro"
+                      className="banner-img top-8 md:top-72 md:flex opacity-0 relative -left-/4 h-20 lg:right-[45%] animate-retro"
                       src={banner.image2}
                       width={100}
                       height={10}

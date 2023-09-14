@@ -63,8 +63,8 @@ features:
 
 #intro
 intro:
-  title: Built Exclusively For You
-  subtitle: SHORT INTRO VIDEO
+  title: Precisamos Colocar Info e Video Aqui
+  subtitle: 
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.
   thumbnail: "/images/video-popup.jpg"
   video_id: dyZcRRWiuuw
