@@ -175,7 +175,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                     />
 
                     <ImageFallback
-                      className="banner-img hidden md:flex opacity-0 -left-40 relative top-8 z-10"
+                      className="banner-img hidden  md:flex opacity-0 -left-[9000%] relative top-8 z-10"
                       src={banner.image3}
                       width={300}
                       height={60}
@@ -184,7 +184,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                     />
 
                     <ImageFallback
-                      className="banner-img flex opacity-0 sm:right-12 md:left-[70%] lg:left-[35%] h-80 top-20 relative z-10"
+                      className="banner-img right-[9000%] flex opacity-0  h-80 top-20 relative z-10"
                       src={banner.image}
                       width={600}
                       height={100}
@@ -204,7 +204,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                     <ImageFallback
                       className="banner-img hidden md:flex opacity-0  relative  h-32 top-72 lg:right-[65%] animate-retro"
                       src={banner.image2}
-                      width={200}
+                      width={300}
                       height={10}
                       priority={true}
                       alt="Fruta"
@@ -266,7 +266,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                 >
                   {brands.map((brand, index) => (
                     <SwiperSlide
-                      className=" h-20 cursor-pointer py-6 px-6 grayscale  transition hover:grayscale-0 lg:px-10"
+                      className=" h-28 cursor-pointer py-6 px-6 grayscale  transition hover:grayscale-0 lg:px-10"
                       key={"brand-" + index}
                     >
                       <div className="relative h-full ">
@@ -294,7 +294,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
           <div className="animate">
             <p className="uppercase">{features.sub_title}</p>
             {markdownify(features.title, "h2", "mt-4 section-title")}
-            {markdownify(features.description, "p", "mt-10 px-48")}
+            {markdownify(features.description, "p", "mt-10 px-20  md:px-56")}
           </div>
           <div className="animate from-right relative mt-10">
             <Swiper
@@ -341,16 +341,16 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
       {/* Short Into */}
       <section className="section pt-0">
         <div className="container-xl">
-          <div className="relative px-4 py-[70px]">
+          <div className="relative px-4  py-[70px]">
             <div className="text-center">
               <div className="animate">
                 <p>{intro.subtitle}</p>
                 {markdownify(intro.title, "h2", "mt-4 section-title")}
-                {markdownify(intro.description, "p", "mt-10")}
+                {markdownify(intro.description, "h6", "mt-10 px-64")}
               </div>
-              <div className="mx-auto mt-10 h-full max-h-[394px] w-full max-w-[716px]">
+ {/*              <div className="mx-auto mt-10 h-full max-h-[394px] w-full max-w-[716px]">
                 <VideoPopup id={intro.video_id} thumbnail={intro.thumbnail} />
-              </div>
+              </div> */}
             </div>
             <div className="bg-theme absolute top-0 left-0 w-full">
               <Circle
@@ -432,7 +432,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
               {markdownify(speciality.primary.description, "p", "mt-10")}
             </div>
           </div>
-          <div className="row items-center">
+          <div className="row  items-center">
             <div className="animate lg:col-6">
               <ImageFallback
                 className="mx-auto rounded-xl"
