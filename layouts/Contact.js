@@ -80,15 +80,15 @@ const Contact = ({ data }) => {
 
   return (
     <section className="section">
-      <Banner title={title} />
+     
       <div className="container">
         <div className="section row items-center justify-center">
           <div className="animate lg:col-5">
             <ImageFallback
               className="mx-auto lg:pr-10"
-              src="/images/Fabio.png"
-              width={497}
-              height={397}
+              src="/images/contato-removed.png"
+              width={600}
+              height={500}
               alt=""
             />
           </div>
@@ -99,7 +99,7 @@ const Contact = ({ data }) => {
               className="contact-form rounded-xl p-6 shadow-[0_4px_25px_rgba(0,0,0,0.05)]"
               onSubmit={handleSubmit}
             >
-              <h2 className="h4 mb-6">Send A Message</h2>
+              <h2 className="h4 mb-6">Envie sua Mensagem</h2>
               <div className="mb-6">
                 <label
                   className="mb-2 block font-medium text-dark"
