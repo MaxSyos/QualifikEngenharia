@@ -252,6 +252,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
             </div>
             <div className="row border-y border-border py-5">
               <div className="animate from-right col-12">
+                {/* <h2 className="mt-4 text-center">Parceiros</h2> */}
                 <Swiper
                   loop={true}
                   slidesPerView={3}
@@ -294,9 +295,10 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
           <div className="animate">
             <p className="uppercase">{features.sub_title}</p>
             {markdownify(features.title, "h2", "mt-4 section-title")}
-            {markdownify(features.description, "p", "mt-10 px-20  md:px-56")}
+            {markdownify(features.description, "p", "mt-10 px-20  md:px-30 lg:px-48")}
           </div>
           <div className="animate from-right relative mt-10">
+          <h2 className="mt-28 text-center">Serviços</h2>
             <Swiper
               slidesPerView={1}
               pagination={{
@@ -346,7 +348,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
               <div className="animate">
                 <p>{intro.subtitle}</p>
                 {markdownify(intro.title, "h2", "mt-4 section-title")}
-                {markdownify(intro.description, "h6", "mt-10 px-64")}
+                {markdownify(intro.description, "p", "text-lg mt-10 p-10")}
               </div>
  {/*              <div className="mx-auto mt-10 h-full max-h-[394px] w-full max-w-[716px]">
                 <VideoPopup id={intro.video_id} thumbnail={intro.thumbnail} />
@@ -433,7 +435,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
             </div>
           </div>
           <div className="row  items-center">
-            <div className="animate lg:col-6">
+            <div className="animate lg:col-6 mt-10">
               <ImageFallback
                 className="mx-auto rounded-xl"
                 src={speciality.secondary.image}
@@ -503,7 +505,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
                             {markdownify(
                               item.content,
                               "p",
-                              "text-[16px] lg:text-[16px] text-body mt-4 md:mt-5 xl:mt-8"
+                              "text-[11px] px-10 sm:text-[13px] lg:px-2 lg:text-[16px] text-body mt-4 md:mt-5 xl:mt-8"
                             )}
     {/*                         <div className="mt-7 inline-block rounded-md bg-body p-7 shadow-[0_10px_50px_rgba(0,0,0,.08)] md:mt-5 lg:mt-8 xl:mt-5">
                               <ImageFallback
