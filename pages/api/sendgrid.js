@@ -4,12 +4,13 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 async function sendEmail(req, res) {
   try {
-    console.log("REQ.BODY", req.body);
     await sendgrid.send({
-      to: "andre.abreu.ufmg@gmail.com", // Your email where you'll receive emails
-      from: "andbackup000@gmail.com", // your website email address here
-      subject: `${req.body.subject}`,
-      html: `<div>${req.body.message}</div>`,
+      to: "qualifik.estagio@gmail.com", // Your email where you'll receive emails
+      from: "qualifik.estagio@gmail.com", // your website email address here
+      subject: `${req.body.subject} - Enviado por ${req.body.name}`,
+      html: `<div>Recebido do Contato - ${req.body.email}</div>
+            </br> Enviado por - ${req.body.name}
+            </br><div>${req.body.message}</div>`,
     });
   } catch (error) {
     // console.log(error);

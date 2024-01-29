@@ -2,11 +2,13 @@ import config from "@config/config.json";
 import Banner from "./components/Banner";
 import ImageFallback from "./components/ImageFallback";
 import { useState } from "react";
+import { useRouter } from 'next/router';
+
 
 const Contact = ({ data }) => {
   const { frontmatter } = data;
   const { title } = frontmatter;
-
+  const router = useRouter();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -57,25 +59,26 @@ const Contact = ({ data }) => {
     let isValidForm = handleValidation();
 
      
-      const res = await fetch("/api/sendgrid", {
-        body: JSON.stringify({
-          email: email,
-          name: name,
-          subject: subject,
-          message: message,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-      });
+    const res = await fetch("/api/sendgrid", {
+      body: JSON.stringify({
+        email: email,
+        name: name,
+        subject: subject,
+        message: message,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
 
-      const { error } = await res.json();
-      if (error) {
-        console.log(error);
-        return;
-      }
-    console.log(name, email, subject, message);
+    const { error } = await res.json();
+    if (error) {
+      console.log(error);
+      return;
+    }
+    console.log("vem daqui",name, email, subject, message);
+    router.push('/');
   };
 
   return (
